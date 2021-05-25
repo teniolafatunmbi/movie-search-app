@@ -15,12 +15,12 @@ const Movie: React.FC<movieProps> = ({movies}) => {
         movies.Rated,
     ]
 return(
-        <div>
-            <img src={movies.Poster} />
-            <div>
+        <div className="movie">
+            <img src={movies.Poster} className="img"/>
+            <div className="movie-details">
                 {
-                    movieDetails.map((detail) => {
-                        return <p>{detail}</p> 
+                    movieDetails.map((detail, i) => {
+                        return <p key={i}>{detail}</p> 
                     })
                 }
             </div>
