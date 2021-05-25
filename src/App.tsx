@@ -10,7 +10,7 @@ const App = () => {
 
     return (
     <div>
-      <Form Text={Text} setText={setText} setMovies={setMovies}/>
+      <Form Text={Text} setText={setText} setMovies={setMovies} />
       <Movie movies={movies}/>
     </div>
   );
