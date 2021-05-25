@@ -21,10 +21,13 @@ const Form: React.FC<searchProps> = ({Text, setText, setMovies}) => {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <div className="form">
+            <form onSubmit={handleSubmit} >
             <input type="search" placeholder="Search movie" value={Text} onChange={SearchChange} />
-            <button>Check movie</button>
+            <button className="btn">Check movie</button>
         </form>
+        
+        </div>
         
     )
 }
