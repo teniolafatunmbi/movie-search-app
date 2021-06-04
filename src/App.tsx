@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Form from "./Form"
-import Movie from "./Movie"
+import ShowMovie from "./ShowMovie"
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -11,7 +11,7 @@ const App = () => {
     return (
     <div>
       <Form Text={Text} setText={setText} setMovies={setMovies} />
-      <Movie movies={movies}/>
+      <ShowMovie movies={movies} />
     </div>
   );
 
