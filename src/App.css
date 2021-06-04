@@ -10,9 +10,9 @@
   color: blue
 }
 
-.img{
+/* .img{
   width: 300px;
-}
+} */
 
 .movie{
   display: flex;
@@ -52,10 +52,10 @@
   height: 200px;
 }
 
-  .img{
+  /* .img{
     width: 200px;
     margin: 5px
-  }
+  } */
 
 }
 
