@@ -1,10 +1,16 @@
-.form {
-  position: relative;
-  top: 10%;
-  left: 30%
+.App{
+  margin: 50px;
 }
 
-.btn {
+.form {
+  width: auto;
+}
+
+.input {
+  padding: 5px;
+}
+
+#btn {
   padding: 5px;
   margin: 5px;
   color: blue
@@ -17,45 +23,60 @@
 .movie{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 4em 15em;
-  /* background-color: blue; */
-  width: 800px;
-  height: 200px
+  justify-content: space-around;
+  background-color: rgb(240, 240, 245);
+  width: auto;
+  padding: 10px;
+  border: 1px;
+  margin-top: 3em;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgb(240, 240, 245);
 }
 
 .movie-details {
-  width: 400px;
+  width: 300px;
   background-color:#ccc;
   border-radius: 10px;
-  padding: 10px
+  padding: 50px
+}
+
+.movie-details > p {
+  margin: 20px;
 }
 
 @media (max-width: 320px) {
-  .form{
-    position: relative;
-    left: 30px;
-    top: 5px
+  .App{
+      margin: 50px;
   }
-  .btn {
+  .form > * {
+    padding: 5px;
+  }
+  #btn {
   padding: 5px;
   margin: 10px 50px;
   color: blue;
 }
-.movie{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 3.5em;
-  /* background-color: blue; */
-  width: 200px;
-  height: 200px;
-}
+  .movie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(240, 240, 245);
+    background-color: rgb(240, 240, 245);
+  }
 
-  /* .img{
+  .movie-details {
+    margin-top: 20px;
+    width: auto;
+    border-radius: 10px;
+    padding: 5px
+  }
+
+  .img{
     width: 200px;
     margin: 5px
-  } */
+  }
 
 }
 
