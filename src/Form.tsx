@@ -16,15 +16,15 @@ const Form: React.FC<searchProps> = ({Text, setText, setMovies}) => {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         const res = await axios.get(`http://www.omdbapi.com/?t=${Text}&apikey=6070c157`);
-        if(res.data.Response === "True") setMovies({ ...[res.data] });
+        if(res.data.Response === "True") setMovies(res.data);
         else alert(res.data.Error)
     }
 
-    return(
+    return(        
         <div className="form">
             <form onSubmit={handleSubmit} >
-                <input type="search" placeholder="Search movie" value={Text} onChange={SearchChange} />
-                <button className="btn">Check movie</button>
+                <input type="search" className="input" placeholder="Search movie" value={Text} onChange={SearchChange} />
+                <button id="btn">Check movie</button>
             </form>
         </div>
         
