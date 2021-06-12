@@ -9,7 +9,7 @@ const App = () => {
   const [Text, setText] = useState<string>("")
 
     return (
-    <div>
+    <div className="App">
       <Form Text={Text} setText={setText} setMovies={setMovies} />
       <ShowMovie movies={movies} />
     </div>
