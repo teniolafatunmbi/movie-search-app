@@ -16,7 +16,10 @@ const Form: React.FC<searchProps> = ({Text, setText, setMovies}) => {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
         const res = await axios.get(`https://www.omdbapi.com/?t=${Text}&apikey=6070c157`);
-        if(res.data.Response === "True") setMovies(res.data);
+        if(res.data.Response === "True") {
+            setMovies(res.data);
+            return setText("");
+        }
         else {
             alert("Input a movie name");
         }
